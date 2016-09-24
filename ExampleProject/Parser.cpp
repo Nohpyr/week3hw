@@ -1,16 +1,23 @@
 #include "Parser.h"
-//we dont need to type 'using namespace std;' since that was defined in Parser.h
-Parser::Parser() {
+
+Parser::Parser() 
+{
 
 }
 
-string Parser::getCommandRef(string cmd){
-	/*
-		Put Your Command Reference Code Here (ie the if else statements)
-	*/
-	if (cmd == "cat"){
-		return "prints content of file";
+string Parser::getCommandRef(string cmd)
+{
+	if (cmd == "levels")
+	{
+		return "prints the levels you inputed";
+	}
+	if (cmd == "pluma")
+	{
+		return "a text editor that no one uses";
+	}
+	if (cmd == "hi")
+	{
+		return "returns Hi Ronak";
 	}
 	return "reference";
 }
-//we dont need to redefine the class here since we already did that in
